@@ -1,0 +1,33 @@
+import React, { useState } from 'react';
+import VaultList from '../components/VaultList';
+import AddVault from '../components/AddVault';
+import VaultDetails from '../components/VaultDetails';
+
+const sampleVaults = [
+  { id: 1, name: "Media Vault 1", info: ["Media info 1", "Media info 2"] },
+  { id: 2, name: "Media Vault 2", info: ["Media info 3"] },
+];
+
+function Media() {
+  const [vaults, setVaults] = useState(sampleVaults);
+  const [selectedVault, setSelectedVault] = useState(null);
+
+  const addVault = (vault) => {
+    setVaults([...vaults, vault]);
+  };
+
+  const addVaultInfo = (id, info) => {
+    setVaults(vaults.map(vault => vault.id === id ? { ...vault, info: [...vault.info, info] } : vault));
+  };
+
+  return (
+    <div className="p-8">
+      <h2 className="text-2xl">Media Vault</h2>
+      <AddVault addVault={addVault} />
+      <VaultList vaults={vaults} setSelectedVault={setSelectedVault} />
+      {selectedVault && <VaultDetails vault={selectedVault} addVaultInfo={addVaultInfo} />}
+    </div>
+  );
+}
+
+export default Media;
