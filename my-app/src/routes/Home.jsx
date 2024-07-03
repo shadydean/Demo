@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import React from 'react';
 import Hero from '../components/Hero';
 import AboutUs from '../components/AboutUs';
@@ -7,7 +6,7 @@ import LoginSignup from '../components/LoginSignup';
 
 function Home() {
   return (
-    <div className="bg-gray-400"> {/* Add bg-gray-100 for light gray background */}
+    <div className="bg-gray-800"> 
       <Hero />
       <LoginSignup />
       <AboutUs />

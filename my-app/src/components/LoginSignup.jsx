@@ -6,7 +6,7 @@ const LoginSignup = () => {
   const [isLoginSelected, setIsLoginSelected] = useState(true);
 
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen '>
+    <div id="login" className='flex flex-col items-center justify-center min-h-screen '>
       <div className='inline-flex'>
         <button
           className={`btn bg-gray-100 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l ${isLoginSelected ? 'bg-gray-500' : 'bg-indigo-100'}`}

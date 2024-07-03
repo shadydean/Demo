@@ -2,7 +2,7 @@ import React from 'react';
 
 function AboutUs() {
   return (
-    <div className="p-8">
+    <div id = "about"className="p-8">
       <section className=" text-white" id="features">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-[3rem] font-semibold mb-8">Features</h2>

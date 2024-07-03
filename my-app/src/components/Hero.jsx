@@ -13,7 +13,7 @@ function Hero() {
         <p className='font-light text-slate-200 text-[1.38rem]'>
           Keep your sensitive information safe with SecureGuard – our state-of-the-art encryption ensures your data remains private and protected.
         </p>
-        <ul className='flex flex-col gap-8 font-thin text-[1.2rem] text-slate-400'>
+        <ul className='flex  flex-col gap-8 font-thin text-[1.2rem] text-slate-100'>
           <li className='flex items-center gap-x-2'>
             <span><FaCheck className=' text-green-400' /></span>Easily organize and access your files with robust encryption.
           </li>
